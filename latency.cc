@@ -23,7 +23,7 @@ int benchmark(unsigned int buffer_bytes) {
 
     // Flood out random array and access info in cache for clean start
     char x;
-    // Make long_string 4MB long (cache has about 3MB, so this should clean it)
+    // Make long_string 4MB long 
     string long_string(4000000, 'b');
     for (int j = 0; j < 4000000; j++) {
         x = long_string[j];
